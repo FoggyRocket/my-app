@@ -6,7 +6,149 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-      /* Your CSS Here */
+        html,body{
+
+            margin:0px;
+            padding: 0px;
+            height:80vh;
+
+        }
+        header{
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            font-size: 1.5em;
+            background: #ff0201;
+        }
+        aside{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: purple;
+            height: 857px;
+            width: 15%;
+            color:#fff
+        }
+        main{
+            background-color: #2096f3;
+            width: 85%;
+            padding: 20px;
+            position: relative;
+        }
+        footer{
+            color: #fff;
+            padding: 10px;
+            background-color: #008002;
+            font-size: 1.5em;
+            text-align: center;
+            width: 100%;
+        }
+
+        .content{
+            width: 100%;
+            display: flex;
+        }
+
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d6ebfd;
+            font-size: 2em;
+            text-align: center;
+            margin:10px;
+        }
+        .item-1, .item-5{
+            width: calc(100% - 23%);
+            height: calc(100% - 72%);
+        }
+
+        .item-1{
+            float: left;
+        }
+        .item-2{
+            float:right;
+        }
+        .item-3{
+            height: calc(100% - 63%);
+            width: calc(100% - 45%);
+
+            float: right
+
+        }
+        .item-4{
+
+            float: left;
+        }
+        .item-5{
+            float: right;
+        }
+
+        .item-2, .item-4{
+            height: calc(100% - 32%);
+            width: calc(100% - 80%);
+        }
+
+        @media only screen and (max-width: 600px){
+            .content{
+                display:flex ;
+                flex-direction: column;
+            }
+            main{
+                width: calc(100%);
+                background-color: #2096f3;
+                height: 77vh;
+                padding: 10px;
+            }
+            div aside{
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                text-align: center;
+                color: #fff;
+                font-size: 1.5em;
+                background: #7f0280;
+            }
+            .item{
+                margin:6px;
+            }
+            .item-1, .item-5{
+                width: calc(100% - 30%);
+                height: calc(100% - 75%);
+            }
+            .item-1{
+                float: right;
+                margin-right: 0;
+            }
+            .item-2{
+                float:left;
+                margin-left: 0;
+            }
+            .item-3{
+                height: calc(100% - 63%);
+                width: calc(100% - 57%);
+                float: left;
+            }
+            .item-4{
+
+                float: right;
+                margin-right: 0;
+            }
+            .item-5{
+                float: left;
+                margin-left:0 ;
+            }
+
+            .item-2, .item-4{
+                height: calc(100% - 35%);
+                width: calc(100% - 75%);
+            }
+
+        }
+
+
+
     </style>
 </head>
 <body>
